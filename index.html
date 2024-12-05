@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positivus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <!-- navbar  -->
+      <nav
+        class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto mt-4"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <img class="w-[30px]" src="images/logo.png" alt="logo" />
+          <a href="/" class="text-2xl font-bold"> Positivus </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div
+          class="hidden md:flex items-center space-x-4 lg:space-x-8 *:font-semibold"
+        >
+          <a href="/about" class="text-gray-600 hover:text-gray-900"
+            >About us</a
+          >
+          <a href="/services" class="text-gray-600 hover:text-gray-900"
+            >Services</a
+          >
+          <a href="/use-cases" class="text-gray-600 hover:text-gray-900"
+            >Use Cases</a
+          >
+          <a href="/pricing" class="text-gray-600 hover:text-gray-900"
+            >Pricing</a
+          >
+          <a href="/blog" class="text-gray-600 hover:text-gray-900">Blog</a>
+          <!-- CTA Button -->
+          <a
+            href="/quote"
+            class="hidden md:block px-4 py-2 rounded-lg border border-[#191A23] hover:bg-[#191A23] transition-colors duration-500 hover:text-white"
+          >
+            Request a quote
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden" aria-label="Open Menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+        <!-- mobile menu -->
+        <div class="hidden md:hidden px-4 py-2 space-y-3">
+          <a href="/about" class="block text-gray-600 hover:text-gray-900"
+            >About us</a
+          >
+          <a href="/services" class="block text-gray-600 hover:text-gray-900"
+            >Services</a
+          >
+          <a href="/use-cases" class="block text-gray-600 hover:text-gray-900"
+            >Use Cases</a
+          >
+          <a href="/pricing" class="block text-gray-600 hover:text-gray-900"
+            >Pricing</a
+          >
+          <a href="/blog" class="block text-gray-600 hover:text-gray-900"
+            >Blog</a
+          >
+          <a
+            href="/quote"
+            class="block px-4 py-2 text-center rounded-full border border-gray-200 hover:border-gray-300 transition-colors duration-200"
+          >
+            Request a quote
+          </a>
+        </div>
+      </nav>
+      <!-- hero section -->
+      <section
+        class="bg-white min-h-[500px] flex items-center max-w-7xl mx-auto"
+      >
+        <div class="px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Left Column - Text Content -->
+          <div class="space-y-8">
+            <h1 style="line-height: 70px" class="text-4xl md:text-5xl">
+              Navigating the digital landscape for success
+            </h1>
+            <p class="text-gray-600 max-w-md">
+              Our digital marketing agency helps businesses grow and succeed
+              online through a range of services including SEO, PPC, social
+              media marketing, and content creation.
+            </p>
+            <button
+              class="bg-[#1A1A1A] text-white px-6 py-3 rounded-lg hover:bg-black duration-500"
+            >
+              Book a consultation
+            </button>
+          </div>
+
+          <!-- Right Column - Megaphone Illustration -->
+          <div>
+            <img
+              class="w-[80%]"
+              src="/images/hero_img.png"
+              alt="hero banner img"
+            />
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
