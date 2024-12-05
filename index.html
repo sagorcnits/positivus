@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Positivus</title>
+    <!-- tailwind cdn link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css style 
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .hero_heading {
+          line-height: 70px;
+        }
+      }
+    </style> -->
   </head>
   <body>
     <header>
@@ -87,13 +96,13 @@
         </div>
       </nav>
       <!-- hero section -->
-      <section
-        class="bg-white min-h-[500px] flex items-center max-w-7xl mx-auto"
-      >
-        <div class="px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
-          <!-- Left Column - Text Content -->
-          <div class="space-y-8">
-            <h1 style="line-height: 70px" class="text-4xl md:text-5xl">
+      <section class="bg-white flex items-center max-w-7xl mx-auto">
+        <div
+          class="px-4 py-16 flex flex-col-reverse md:flex-row *:flex-1 gap-12 items-center"
+        >
+          <!-- hero content side -->
+          <div class="space-y-6 lg:space-y-8">
+            <h1 class="text-4xl lg:text-5xl">
               Navigating the digital landscape for success
             </h1>
             <p class="text-gray-600 max-w-md">
@@ -108,10 +117,10 @@
             </button>
           </div>
 
-          <!-- Right Column - Megaphone Illustration -->
-          <div>
+          <!-- hero image side-->
+          <div class="flex justify-center md:justify-end">
             <img
-              class="w-[80%]"
+              class="w-[60%] md:w-[80%]"
               src="/images/hero_img.png"
               alt="hero banner img"
             />
